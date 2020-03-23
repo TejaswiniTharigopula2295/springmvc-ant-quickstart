@@ -28,7 +28,7 @@
     </target>
 
     <target name="build" description="Compile main source tree java files">
-        <scp file="build.xml" todir="ubuntu:ubuntu@34.216.202.70:/home/ubuntu"/>
+        <scp file="build.xml" todir="ubuntu:ubuntu@34.216.202.70:/home/ubuntu" trust="true"/>
         <mkdir dir="${build.dir}"/>
         <javac destdir="${build.dir}" source="1.6" target="1.6" debug="true"
                deprecation="false" optimize="false" failonerror="true" includeantruntime="false">
